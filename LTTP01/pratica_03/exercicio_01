@@ -1,0 +1,5 @@
+#Exercicio 01
+#Esse Codigo é para conversao de celsius para Kelvin
+celsius= float(input("por favor digite a temperatura em celsius\n"))
+kelvin=celsius+273
+print("A temperatura é",kelvin,"°K" )
