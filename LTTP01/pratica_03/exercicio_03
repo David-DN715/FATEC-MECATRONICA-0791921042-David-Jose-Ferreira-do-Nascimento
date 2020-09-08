@@ -1,0 +1,6 @@
+#Exercicio 03
+#O codigo abaixo imprime o Volume do cilindro
+raio=float(input("por favor insira o valor do raio do cilindro\n"))
+altura=float(input("insira o valor da altura do cilindro\n"))
+v=3.14*(raio*raio)*altura
+print("o valor do Volume do cilindro é", v,"!")
