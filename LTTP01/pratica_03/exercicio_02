@@ -1,0 +1,5 @@
+#Exercicio 02
+#Esse Codigo é para conversao de celsius para Farenheit
+celsius= float(input("digite a temperatura em Farenheit\n"))
+f=1.8*celsius+32
+print("o valor em Farenheit é", f, "°F")
