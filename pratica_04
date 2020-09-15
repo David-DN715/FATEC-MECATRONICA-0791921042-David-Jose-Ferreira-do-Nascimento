@@ -1,0 +1,10 @@
+#Pede ao usuario para digitar a sua idade
+idade = int(input("digite sua idade"))
+
+#Pergunta, no codigo, se o usuario é aior de 18
+if idade>= 18 :
+    #esse bloco pertence a if 
+  print("agora você tem 18 anos ou mais")
+  print("Agora vce pode ver todas as paginas de jogos da stean")
+
+print("Final do codigo")
