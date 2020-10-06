@@ -1,4 +1,3 @@
-#link usado para o codigo do exercicio abaixo para compreensão do PWM
 #V_out: Tensão de Saída
 #T_ON: Tempo em nível alto
 #T: Período total do sinal
