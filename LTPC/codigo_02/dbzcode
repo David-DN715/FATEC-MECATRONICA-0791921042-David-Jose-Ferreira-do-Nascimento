@@ -1,0 +1,8 @@
+continuar = "sim"
+
+while continuar =="sim":
+  nome = input("digite um nome:\n")
+  if nome == "kuririn":
+    print("digite outro nome porque", nome , "é fraco demais")
+    continuar = input("deseja continuar ? ")
+  print("verme maldito, vamos lutar", nome , "!!!")
