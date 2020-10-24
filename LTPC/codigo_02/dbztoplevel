@@ -1,0 +1,18 @@
+continuar = "sim"
+goku = 8000
+
+while continuar =="sim":
+  nome = input("digite um nome:\n")
+  digite_nivel = float(input("nivel de poder:"))
+
+  if nome == "kuririn":
+    print("digite outro nome porque", nome , "é fraco demais")
+    
+
+  if digite_nivel <= goku:
+    print("vai treinar", nome , "!!, você perde do KURIRIN")
+
+  elif digite_nivel >= goku:
+    print("Corre negada!!!")
+
+  continuar = input("deseja continuar ? ")
