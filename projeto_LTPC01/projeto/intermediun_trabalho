@@ -1,0 +1,73 @@
+#definir funcao usuario
+#1 - função de pagamento
+#2 - função de receber pagamento
+
+#Definido menu menu:
+print("1 - pagamento")
+print("2 - receber")
+print("3 - criar conta")
+
+#Função mostrar login:
+def mostrar_login(nome, email, senha, numero_da_conta):
+  print("Name:", nome)
+  print("email:", email)
+  print("numero da conta:", numero_da_conta)
+
+def login001 (nome, email, senha, numero_da_conta):
+  nome = "David jose"
+  email = "dvdjoseferreira@gmail.com"
+  senha = "Ghost001"
+  numero_da_conta = 1
+  return nome, email, senha, numero_da_conta
+
+def login002 (nome, email, senha, numero_da_conta):
+  nome = "Gabriel jose"
+  email = "gabi_jfn@gmail.com"
+  senha = "Ghost002"
+  numero_da_conta = 2
+  return nome, email, senha, numero_da_conta
+
+def login003 (nome, email, senha, numero_da_conta):
+  nome = "Daniel jose"
+  email = "dani_jfn@gmail.com"
+  senha = "Ghost003"
+  numero_da_conta = 3
+  return nome, email, senha, numero_da_conta
+
+def pagamento (nome, numero_da_conta, valor, validacao):
+ nome = input ("digite o nome a que transferir separado por ',':\n")
+ numero_da_conta = input ("digite o numero da conta a quem transferir:\n")
+ valor = input("digite o valor a transferir:\n")
+ validacao = input("digite a validacao:\n")
+ opcao = True
+ while opcao:
+  nome_validacao, numero_da_conta_validacao = validacao.split(';')
+  if nome == nome_validacao and numero_da_conta == numero_da_conta_validacao:
+    print ("dados validos!")
+  else:
+    print("Dados invalidos!")
+    return nome, numero_da_conta, valor,validacao
+
+def receber (quem, numero_da_conta, mudar):
+  continuar == True
+  while continuar:
+    quem = input("digite o nome de quem vai receber:\n")
+    numero_da_conta = float(input("Qual a conta?\n"))
+    mudar = "{};{}".format(quem.uper(), numero_da_conta)
+    if numero_da_conta == True:
+      print(mudar)
+    else:
+      print("digite alguma conta valida!")
+      return quem, numero_da_conta, mudar
+
+# codigo principal
+import os
+continuar = True
+while continuar:
+  os.sysystem("cls")
+  opcao = int(input("qual operação você quer realizar?"))
+  if opcao ==1:
+    print(transferencia)
+
+  if opcao == 2:
+    
