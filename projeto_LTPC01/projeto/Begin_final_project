@@ -17,15 +17,29 @@ def login001 (nome, email, senha, numero_da_conta):
   nome = "David jose"
   email = "dvdjoseferreira@gmail.com"
   senha = "Ghost001"
-  numero_da_conta = 001
+  numero_da_conta = 1
+  return nome, email, senha, numero_da_conta
+
+def login002 (nome, email, senha, numero_da_conta):
+  nome = "Gabriel jose"
+  email = "gabi_jfn@gmail.com"
+  senha = "Ghost002"
+  numero_da_conta = 2
+  return nome, email, senha, numero_da_conta
+
+def login003 (nome, email, senha, numero_da_conta):
+  nome = "Daniel jose"
+  email = "dani_jfn@gmail.com"
+  senha = "Ghost003"
+  numero_da_conta = 3
   return nome, email, senha, numero_da_conta
 
 
 #Definida função criar novo login com conta:
 def novo_login():
- contador_de_contas = 0 
- numero_da_conta = 0 
- while contador_de_contas==0: 
+ contador_de_contas = 3 
+ numero_da_conta = 3
+ while contador_de_contas== 3: 
   nome = input("digite seu nome:")
   email = input("digite seu email:")
   senha = input("Crie aqui sua senha:")
