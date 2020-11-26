@@ -1,0 +1,11 @@
+def transferir (quem, numero_da_conta, mudar):
+  continuar == True
+  while continuar:
+    quem = input("digite o nome de quem vai receber:\n")
+    numero_da_conta = float(input("Qual a conta?\n"))
+    mudar = "{};{}".format(quem.uper(), numero_da_conta)
+    if numero_da_conta == True:
+      print(mudar)
+    else:
+      print("digite alguma conta valida!")
+      return quem, numero_da_conta, mudar
