@@ -64,4 +64,14 @@ while continuar:
       if nome == nome_validacao and numero_da_conta == numero_da_conta_validacao:
         print ("dados validos!")
       else:
-        print("Dados invalidos!")  
+        print("Dados invalidos!")
+      if opcao == 2:
+       continuar = True
+       while continuar:
+        quem = input("digite o nome de quem vai receber:\n")
+        numero_da_conta = float(input("Qual a conta?\n"))
+        mudar = "{};{}".format(quem.upper(), numero_da_conta)
+        if numero_da_conta == True:
+         print(mudar)
+        else:
+         print("digite conta valida!")
