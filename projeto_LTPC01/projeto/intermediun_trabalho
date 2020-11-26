@@ -64,10 +64,14 @@ def receber (quem, numero_da_conta, mudar):
 import os
 continuar = True
 while continuar:
-  os.sysystem("cls")
+  os.system("cls")
   opcao = int(input("qual operação você quer realizar?"))
   if opcao ==1:
-    print(transferencia)
-
-  if opcao == 2:
-    
+    nome = input ("digite o nome a que transferir separado por ',':\n")
+    numero_da_conta = input ("digite o numero da conta a quem transferir:\n")
+    valor = input("digite o valor a transferir:\n")
+    validacao = input("digite a validacao:\n")
+    print(pagamento(nome, numero_da_conta, valor, validacao))
+  else:
+    print("Opcao Invalida!")
+  input("Pressione enter para continuar")
