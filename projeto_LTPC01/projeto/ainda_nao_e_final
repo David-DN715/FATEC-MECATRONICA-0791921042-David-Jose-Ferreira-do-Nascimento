@@ -1,0 +1,48 @@
+#1 - pagamento
+#2 - recebemento
+
+#definir funçao de entrada
+def exibir_menu ():
+ print("1 - pagamento")
+ print("2 - recebemento")
+
+
+def conta (nome, email, senha, saldo, numero_da_conta):
+  print(nome)
+  print(email)
+  print(saldo)
+  print(numero_da_conta)
+  return nome, email, senha, saldo, numero_da_conta
+
+def validacao (nome, validacao, numero_da_conta):
+  nome_validacao, numero_da_conta_validacao = validacao.split(',')
+  if nome == nome_validacao and numero_da_conta==numero_da_conta_validacao:
+    print(conta)
+  else:
+    print("Dados invalidos!")
+  return nome, validacao, numero_da_conta 
+
+import os
+continuar = True
+while continuar:
+  os.system("clear")
+  exibir_menu()
+  opcao = int(input("qual opcao vai escolher?\n"))
+  if  opcao == 1:
+   nome = input("digite o nome a quem transferir:\n")
+   numero_da_conta = float(input("Qual a conta?\n"))
+   validacao_da_transacao = input("Digite o codigo de validacao:\n")
+   if validacao == True:
+     print(validacao,(nome, numero_da_conta))
+   else:
+    print("Dados invalidos")
+  if opcao == 2:
+    continuar = True
+    while continuar:
+     quem = input("digite o nome de quem vai receber:\n")
+     numero_da_conta = float(input("Qual a conta?\n"))
+     mudar = "{};{}".format(quem.upper(), numero_da_conta)
+    if numero_da_conta == True:
+      print(mudar)
+    else:
+      print("digite conta valida!")
