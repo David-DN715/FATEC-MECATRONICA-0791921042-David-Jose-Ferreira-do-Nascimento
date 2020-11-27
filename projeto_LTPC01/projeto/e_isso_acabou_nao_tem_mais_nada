@@ -1,0 +1,50 @@
+#opçoes Menu 
+def menu():
+  print("1 - pagar")
+  print("2 - receber pagamento")
+  print("3 - criar usuario")
+
+#na parte de receber dinheiro
+def transferir (usuario, numero_da_conta, mudar):
+  continuar = True
+  while continuar:
+    usuario = input("digite o nome de quem vai receber:\n")
+    numero_da_conta = float(input("Qual a conta?\n"))
+    mudar = "{};{}".format(usuario.uper(), numero_da_conta)
+    if numero_da_conta == True:
+      print(mudar)
+    else:
+      print("digite alguma conta valida!")
+      return usuario, numero_da_conta, mudar
+
+continuar = True
+while continuar:
+ menu()
+ opcao = int(input("O que deseja fazer?\n"))
+ if opcao == 1:
+   print("Em breve!")
+   break
+ if opcao ==2:
+   usuario = input("digite o nome :\n")
+   numero_da_conta = float(input("Qual sua conta?\n"))
+   mudar = "{};{}".format(usuario.upper(), numero_da_conta)
+   if mudar == True:
+      print(mudar)
+   else:
+    print("digite alguma conta valida!")
+ if opcao == 3:
+   numero_da_conta= 0
+   contador_de_contas =0
+   saldo = 0
+  #aqui se cria usuario de conta e adiciona no contador_de_contas 
+   while contador_de_contas == 0:
+    usuario = input("crie aqui seu usuario:\n")
+    senha = input("crie aqui senha:\n")
+    saldo = float(input("deseja colocar um saldo na conta?\tse sim digite o valor:\n"))
+    contador_de_contas +=1
+    if numero_da_conta <= 999:
+     numero_da_conta == contador_de_contas
+    numero_da_conta += 1
+    contador_de_contas +=1
+    print("parabens", usuario, "o numero da sua conta é", numero_da_conta)
+ break
