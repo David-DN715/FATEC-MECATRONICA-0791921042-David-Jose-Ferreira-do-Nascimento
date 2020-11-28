@@ -1,0 +1,50 @@
+
+def usuario(nome, email, senha, identidade):
+ usuario_conta = {} 
+ contador_de_conta = 0
+ for nome in usuario_conta:
+  contador_de_conta +=1
+  usuario_conta = identidade, nome, email
+  print(usuario_conta)
+  return nome, email, senha, identidade
+ 
+ 
+continuar = True 
+while continuar:
+  contador_de_contas = 0
+  identidade = 0
+  nome = input("Digite um nome:\n")
+  email = input("digite aqui seu email:\n")
+  senha = input("digite aqui a senha")
+  contador_de_contas +=1
+  if contador_de_contas == +1:
+   identidade = contador_de_contas
+   continuar = False
+   print(usuario(nome, email, senha, identidade))
+  else:
+   print("digite informaçoes vaidas")  
+
+def usuario(nome, email, senha, identidade):
+ usuario_conta = {} 
+ contador_de_conta = 0
+ for nome in usuario_conta:
+  contador_de_conta +=1
+  usuario_conta = identidade, nome, email
+  print(usuario_conta)
+  return nome, email, senha, identidade
+ 
+ 
+continuar = True 
+while continuar:
+  contador_de_contas = 0
+  identidade = 0
+  nome = input("Digite um nome:\n")
+  email = input("digite aqui seu email:\n")
+  senha = input("digite aqui a senha")
+  contador_de_contas +=1
+  if contador_de_contas == +1:
+   identidade = contador_de_contas
+   continuar = False
+   print(usuario(nome, email, senha, identidade))
+  else:
+   print("digite informaçoes vaidas")  
