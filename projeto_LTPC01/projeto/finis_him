@@ -1,0 +1,12 @@
+def usuario(nome, email, senha):
+ usuario_conta = {}
+ for nome in usuario_conta:
+   nome, email = usuario_conta
+   print(usuario_conta)
+ return nome, email, senha
+
+nome = input("Digite um nome:\n")
+email = input("digite aqui seu email:\n")
+senha = input("digite aqui a senha")
+
+print(usuario(nome, email, senha))
