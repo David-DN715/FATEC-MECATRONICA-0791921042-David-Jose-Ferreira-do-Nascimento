@@ -1,0 +1,15 @@
+def validacao (string_validacao):
+  encontrei = False
+  for conta in string_validacao.split(";"):
+    if conta == string_validacao:
+     encontrei = True
+     if encontrei == True:
+       print(string_validacao)
+     return encontrei
+
+conta001 = {'nome':'Goku kakaroto', 'id': '001', 'saldo': '1000'}
+conta002 = {'nome': 'Kakashi hatake', 'id': '002', 'saldo':'3000'}
+conta003 = {'nome': 'mydorya Izuku', 'id':'003', 'saldo': '250'}
+
+conta = input("Digite tudo com ',':\n")
+print(validacao(conta))
