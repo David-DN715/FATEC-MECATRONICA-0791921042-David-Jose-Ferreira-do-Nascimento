@@ -7,9 +7,10 @@ def menu():
 #a funcao abaixo permite verificar as contas existentes, porem só as que estão abaixo
 def validacao (string_validacao):
   encontrei = False
-  for conta  in string_validacao.split(";"):
+  for conta  in string_validacao.split(","):
     if conta == string_validacao:
-     encontrei = True
+      numero_aleatorio == numero_aleatorio
+      encontrei = True
     else:
       print("digite conta valida!")
       return encontrei
@@ -56,7 +57,7 @@ while continuar:
     valor = float(input("qual valor vai transferir? digita ai:\n"))
     #o codigo abaixo permite criar numeros aleatorios para a string de validaçao
     numero_aleatorio = random.randint(1000,9999)
-    mudar = "{};{};{};{}".format(quem.upper(), numero_da_conta, valor,numero_aleatorio)
+    mudar = "{},{},{},{}".format(quem.upper(), numero_da_conta, valor,numero_aleatorio)
     if numero_da_conta == True: 
       #se tudo acima estiver certo irá printar na tela a string de validacao
      print(mudar)
@@ -74,3 +75,6 @@ while continuar:
  else:
    print("opção invalida!")
    input("Press enter to continue...")
+
+
+  
