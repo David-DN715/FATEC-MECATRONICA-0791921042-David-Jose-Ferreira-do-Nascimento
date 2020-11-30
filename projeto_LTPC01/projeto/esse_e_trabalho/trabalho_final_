@@ -1,80 +1,75 @@
+#a biblioteca random abaixo permite que possa gerar numeros aleatorios!
+import random
+
 # A função abaixo mostra o menu
 def menu():
+  print("0 - parar progama")
   print("1 - criar login")
-  print("2 - formar a string de validacao")
-  print("3 - para validar string no pagamento")
+  print("2 - gerar requisição de pagamento!")
+  print("3 - pagamento")
 
-#a funcao abaixo permite verificar as contas existentes, porem só as que estão abaixo
-def validacao (string_validacao):
+#a funçao abaixo gera a string com numero aleatorios
+def mudar(quem, numero_da_conta, valor):
+ numero_aleatorio = random.randint(1000,9999)
+ type(str(numero_aleatorio))
+ type(str(numero_da_conta))
+ type(str(valor))
+ mudar = "{};{};{};{}".format(quem.upper(), numero_da_conta, valor,numero_aleatorio)
+ return mudar
+
+#dicionarios que contem as informações dos usuarios!
+conta001 ={'nome': 'Goku kakaroto', 'email':'gokukakaroto@dbz.com','saldo':'10000'}
+
+conta002 ={'nome': 'Principe Vegeta', 'email':'vegetaprincipe@dbz.com','saldo':'9000'}
+
+conta003 ={'nome':'Moro', 'email':'moro_absorvoki@dbz.com','saldo':'1000'}
+
+#a função abaixo era para fazer a busca das contas declaradas abaixo e validar elas, porem não funciona!
+def buscar(conta_busca):
   encontrei = False
-  for conta  in string_validacao.split(","):
-    if conta == string_validacao:
-      numero_aleatorio == numero_aleatorio
+  for conta in conta_busca.split(';'):
+   if conta == conta001:
+    print(conta_busca)
+    encontrei = True
+    if conta == conta002:
+      print(conta_busca)
+    encontrei = True
+    if conta == conta003:
+      print(conta_busca)
       encontrei = True
-    else:
-      print("digite conta valida!")
-      return encontrei
-
-
-conta001 = {'nome':'Goku kakaroto', 'id': '001', 'saldo': '1000'}
-conta002 = {'nome': 'Kakashi hatake', 'id': '002', 'saldo':'3000'}
-conta003 = {'nome': 'mydorya Izuku', 'id':'003', 'saldo': '250'}
-
-continuar = True
-#abaixo tem um dicionario que armazena o usuario criado
-usuario_conta = {}
-#a bilioteca importada random permite gerar numeros aleatorios
-import random
+      return encontrei 
+  
 #codigo principal:
+import os
+continuar = True
 while continuar:
+ os.system('clear')
+ input("press any key...")
  menu()
  opcao = int(input("Digite a opçcao que deseja:\n"))
- #chmamar opção 1 criar usuario_conta
- if opcao == 1:
-  continuar = "s"
-  while continuar:
-   identidade_conta = {}
-   saldo = []
-   contador_de_conta = 0
-   nome =input("digite aqui seu nome:\n")
-   senha = input("digite sua senha:\n")
-   email = input("digite seu email:\n")
-   contador_de_conta += 1 
-   if contador_de_conta == +1:
-    identidade_conta = contador_de_conta
-    saldo = 1000
-    valor = type(str(saldo))
-    usuario_conta= nome, identidade_conta, email, saldo
-    type(str(usuario_conta))
-    continuar = False
-    print(usuario_conta)
-    #codigo abaixo permite criar a string de validação com numero aleatorios
- elif opcao==2:
-   continuar = True
+ if opcao ==1:
+   print("opção fora do ar!... desculpe pelo transtorno!")
+   os.system('clear')
+   input("press any key...")
+   #a opção abaixo gera a string de validação, ela funciona!
+ elif opcao ==2:
+   continuar = "s"
    while continuar:
-    quem = input("digite o nome de quem vai receber:\n")
-    numero_da_conta = float(input("Qual a conta?\n"))
-    valor = float(input("qual valor vai transferir? digita ai:\n"))
-    #o codigo abaixo permite criar numeros aleatorios para a string de validaçao
-    numero_aleatorio = random.randint(1000,9999)
-    mudar = "{},{},{},{}".format(quem.upper(), numero_da_conta, valor,numero_aleatorio)
-    if numero_da_conta == True: 
-      #se tudo acima estiver certo irá printar na tela a string de validacao
-     print(mudar)
-     continuar = False
-   #validar string e pagar
- elif opcao ==3:
-    continuar = 's'
-    while continuar:
-     conta = input("digite a validacao:\n")
-     minha_conta= input("Digite seu nome na conta:\n")
-     continuar = input("deseja fazer algo mais?\n")
-     print(validacao(conta))
+    quem = input("digite o nome de quem vai transferir:\n")
+    numero_da_conta = input("Digite o numero da conta:\n")
+    valor = input("digite o valor a transferir:\n")
+    continuar = input("deseja fazer mais uma?")=='s'
+    print(mudar(quem, numero_da_conta, valor))
+    #a função abaixo pede para digitar a string de validação porem não funciona!
+ elif opcao == 3:
+   conta = input("Digite o codigo de validação:\n")
+   print(buscar(conta))
+   os.system('clear')
+   input("press any key...")
+   continuar = input("Voltar ao menu press any key..?")=='s'
+   #A opção abaixo para o progama!
  elif opcao == 0:
-   continuar = False
+   continuar = False  
  else:
    print("opção invalida!")
    input("Press enter to continue...")
-
-
-  
