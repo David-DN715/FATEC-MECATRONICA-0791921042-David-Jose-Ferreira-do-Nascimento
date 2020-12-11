@@ -1,0 +1,7 @@
+#o objetivo é validar um numero de telefone usando metodo string
+entrada = input("DIGITE AQUI SEU NUMERO DE CELULAR:\n")
+
+if len(entrada) == 9:
+  print("Numero valido poh!")
+else:
+  print("invalid number!")
